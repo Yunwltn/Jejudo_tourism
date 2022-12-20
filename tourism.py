@@ -19,6 +19,36 @@ def run_tourism_app() :
     st.subheader('3개월간 조회수가 가장 높은 관광지 TOP10')
     df = df.sort_values('전체조회수', ascending=False)
     df_top10 = df.head(10)
-    st.dataframe(df_top10[['분류','관광지명','주소','전체조회수']])
     fig1 = px.bar(df_top10, x= '관광지명', y=['8월','9월','10월','전체조회수'], barmode='group', height=600)
     st.plotly_chart(fig1)
+    st.dataframe(df_top10[['분류','관광지명','주소','전체조회수']])
+    st.subheader('')
+
+    st.subheader('월별 조회수가 많은 관광지 TOP10')
+    my_choice = st.selectbox('조회수 데이터를 보고싶은 달을 선택해주세요', ['8월', '9월', '10월'])
+    if my_choice == '8월' :
+        df_8 = df.loc[ df['8월'] == df['8월'].max() ]
+        st.info(my_choice + '의 조회수가 가장 많은 관광지는 ' + df_8['관광지명'].tolist()[0] + '입니다')
+        df = df.sort_values('8월', ascending=False)
+        df_8_top10 = df.head(10)
+        fig2 = px.bar(df_8_top10, x= '관광지명', y='8월', height=600)
+        st.plotly_chart(fig2)
+        st.dataframe(df_8_top10[['분류','관광지명','주소','8월']])
+
+    elif my_choice == '9월' :
+        df_8 = df.loc[ df['9월'] == df['9월'].max() ]
+        st.info(my_choice + '의 조회수가 가장 많은 관광지는 ' + df_8['관광지명'].tolist()[0] + '입니다')
+        df = df.sort_values('9월', ascending=False)
+        df_9_top10 = df.head(10)
+        fig3 = px.bar(df_9_top10, x= '관광지명', y='9월', height=600)
+        st.plotly_chart(fig3)
+        st.dataframe(df_9_top10[['분류','관광지명','주소','9월']])
+
+    elif my_choice == '10월' :
+        df_8 = df.loc[ df['10월'] == df['10월'].max() ]
+        st.info(my_choice + '의 조회수가 가장 많은 관광지는 ' + df_8['관광지명'].tolist()[0] + '입니다')
+        df = df.sort_values('10월', ascending=False)
+        df_10_top10 = df.head(10)
+        fig4 = px.bar(df_10_top10, x= '관광지명', y='10월', height=600)
+        st.plotly_chart(fig4)
+        st.dataframe(df_10_top10[['분류','관광지명','주소','10월']])
