@@ -9,14 +9,14 @@ def run_tourism_app() :
     image_url = 'https://cdn.pixabay.com/photo/2016/11/18/07/46/seopjikoji-1833560_960_720.jpg'
 
     st.title('제주도 관광지 데이터')
-    st.write('최근 3개월 조회수 데이터로 제주도 관광지의 순위 데이터를 보여주는 앱입니다')
+    st.write('최근 3개월 조회수 데이터로 제주도 관광지의 순위 데이터를 보여드립니다')
     st.info('2022년 8, 9, 10월달의 제주도 관광지 조회수 파일을 사용했습니다')
     st.image(image_url, use_column_width=True)
     df = df.sort_values('관광지명', ascending=False)
     st.dataframe(df[['분류','관광지명','주소']])
     st.subheader('')
 
-    st.subheader('3개월간 조회수가 가장 높은 관광지 TOP10')
+    st.subheader('3개월간 조회수가 가장 높은 관광지 종합 TOP10')
     df = df.sort_values('전체조회수', ascending=False)
     df_top10 = df.head(10)
     fig1 = px.bar(df_top10, x= '관광지명', y=['8월','9월','10월','전체조회수'], barmode='group', height=600)
@@ -24,7 +24,7 @@ def run_tourism_app() :
     st.dataframe(df_top10[['분류','관광지명','주소','전체조회수']])
     st.subheader('')
 
-    st.subheader('월별 조회수가 많은 관광지 TOP10')
+    st.subheader('월별 조회수가 많은 관광지 종합 TOP10')
     my_choice = st.selectbox('조회수 데이터를 보고싶은 달을 선택해주세요', ['8월', '9월', '10월'])
     if my_choice == '8월' :
         df_8 = df.loc[ df['8월'] == df['8월'].max() ]
@@ -52,3 +52,23 @@ def run_tourism_app() :
         fig4 = px.bar(df_10_top10, x= '관광지명', y='10월', height=600)
         st.plotly_chart(fig4)
         st.dataframe(df_10_top10[['분류','관광지명','주소','10월']])
+        st.subheader('')
+
+    st.subheader('관광지 분류별로 조회하기')
+    df_list = df['분류'].unique().tolist()
+    my_choice = st.selectbox('분류를 선택하세요', df_list)
+    df = df.sort_values('전체조회수', ascending=False)
+
+    if my_choice != 0 :
+        choice_df = df.loc[ df['분류'] == my_choice ]
+        choice_df_max = choice_df.loc[ choice_df['전체조회수'] == choice_df['전체조회수'].max() ]
+        choice_df_max = choice_df_max['관광지명'].tolist()[0]
+        st.info(my_choice + '의 조회수 1위는 ' + choice_df_max + ' 입니다')
+        st.dataframe(choice_df[['분류','관광지명','주소','전체조회수','평균조회수']])
+
+        if st.checkbox('해당 분류 TOP10 조회수 차트로 보기') :
+            fig5 = px.bar(choice_df.head(10), x='관광지명', y='전체조회수', height=600, text='전체조회수')
+            fig5.update_traces(textfont_size=14,textposition='auto')
+            st.plotly_chart(fig5)
+
+        
