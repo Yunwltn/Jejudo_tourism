@@ -1,5 +1,5 @@
 <div align=center>
-	<img src="https://capsule-render.vercel.app/api?type=waving&color=_hexcode&height=200&section=header&text=Welcome_to_JeJu-Do!&fontSize=60&animation=twinkling" />
+	<img src="https://capsule-render.vercel.app/api?type=waving&color=0:EEFF00,100:a82da&height=200&section=header&text=Welcome_to_JeJu-Do!&fontSize=60&animation=twinkling" />
 </div>	
 
 <div align=center> 
