@@ -10,6 +10,8 @@
 	<br>
 	<h4>
 
+![1](https://user-images.githubusercontent.com/120348555/209033093-57107bec-54b4-4175-9ccc-1cc66710c0dc.jpg)
+		
 👉웹대시보드 주소 <http://ec2-3-38-117-95.ap-northeast-2.compute.amazonaws.com:8503/>
 
 </div>	
@@ -27,8 +29,6 @@
 	<h3> 사용한 데이터📂 <h3>
 	<h4> 제주관광공사 비짓제주 홈페이지 내 관광지 검색 로그데이터(2022년 8월, 9월, 10월) <h4>
 	<h4> 신한카드 제주도 내 음식점별 전월 대비 매출 변화량 데이터(2022년 8월, 9월, 10월) <h4>
-		
-![1](https://user-images.githubusercontent.com/120348555/209033093-57107bec-54b4-4175-9ccc-1cc66710c0dc.jpg)
 
 <https://www.bigdata-culture.kr/bigdata/user/data_market/agency/detail.do?id=ijto_org>
 </div>	
