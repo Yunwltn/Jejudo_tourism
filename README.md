@@ -1,5 +1,5 @@
 <div align=center>
-	<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99CCFF,100:a82da&height=200&section=header&text=Welcome to JeJu-Do!&fontSize=60&animation=twinkling" />
+	<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99CCFF,100:a82da&height=200&section=header&text=Welcome_to_JeJu-Do!&fontSize=60&animation=twinkling" />
 </div>	
 
 <div align=center> 
@@ -17,7 +17,7 @@
 	<br>
 	<br>
 	<h3> 프로젝트 메뉴 구성📋 <h3>
-	<h4> Home : 메인페이지
+	<h4> Home : 메인페이지 + EDA
 	<h4> Tourism : 최근 3개월 조회수 데이터로 제주도 관광지의 순위 통계
   <h4> Restaurant : 최근 3개월 카드사 제주도 식당내 매출 데이터로 제주도 내 음식점 순위 현지인과 외지인 소비 통계
 	<br>
@@ -86,6 +86,7 @@
 <h5>1. 메인 앱 화면 생성<h5>
 
 - 앱을 대표하는 이미지와 무슨 앱인지 소개하는 글 작성
+- EDA 버튼 설정 누르면 사용한 데이터프레임 기본 정보를 볼 수 있게 입력
 - 사이드바 메뉴에 이미지와 관광지명으로 주소 검색하는 기능 설정
 		
 <h5>2. 파일을 새로 만들어 분석한 제주도 조회수별 관광지 순위 파일 작업<h5>
