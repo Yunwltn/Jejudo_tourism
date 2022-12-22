@@ -5,7 +5,6 @@ from PIL import Image
 import plotly.express as px
 
 def run_jejuEDA_app() :
-    st.title('Welcome to JeJu-Do! EDA')
     tourism_df = pd.read_csv('jjtourism_2022.csv',index_col=0)
     restaurant_df = pd.read_csv('jjrestaurant_2022.csv',index_col=0)
 
