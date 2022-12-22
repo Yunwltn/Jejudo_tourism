@@ -9,8 +9,6 @@
 	<h6> 관광지 조회수, 음식점 카드 매출수 정보를 통계해 차트와 데이터프레임으로 순위를 보여줍니다 <h6>
 	<br>
 	<h4>
-
-![1](https://user-images.githubusercontent.com/120348555/209033093-57107bec-54b4-4175-9ccc-1cc66710c0dc.jpg)
 		
 👉웹대시보드 주소 <http://ec2-3-38-117-95.ap-northeast-2.compute.amazonaws.com:8503/>
 
