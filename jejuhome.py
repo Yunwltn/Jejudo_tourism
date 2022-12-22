@@ -12,5 +12,4 @@ def run_jejuhome_app() :
     image_url = 'http://www.grandmerjeju.com/data/editor/1610/thumb-4c97623c9cb60df276a4dc448a48316c_1476762657_11_1000x598.jpg'
     st.image(image_url, use_column_width=True)
 
-    if st.button('👉 Welcome to JeJu-Do! EDA 👈') :
-        run_jejuEDA_app()
+    run_jejuEDA_app()
