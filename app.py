@@ -11,6 +11,7 @@ def main() :
     st.sidebar.image(img_url)
 
     st.sidebar.title(':palm_tree: Welcome to JeJu-Do! :palm_tree:')
+    
     choice = st.sidebar.selectbox('MENU', menu)
     st.sidebar.write('')
 
@@ -33,6 +34,7 @@ def main() :
 
     elif choice == '🌼 Restaurant' :
         run_restaurant_app()
+
 
 if __name__ == '__main__' :
     main()
