@@ -20,8 +20,8 @@ def main() :
     if len(tourism_input) != 0 :
         my_tourism = df.loc[ df['관광지명'].str.contains(tourism_input, case=False) ]
         st.sidebar.dataframe(my_tourism[['관광지명','주소']])
-        if st.sidebar.button('다른 관광지 더 살펴보기 :car:') :
-            run_tourism_app()
+        st.sidebar.info('다른 관광지를 더 보고싶다면 상단의 Tourism 를 클릭해주세요 :mag:')
+
     else :
         st.sidebar.dataframe(df[['관광지명','주소']])
 
