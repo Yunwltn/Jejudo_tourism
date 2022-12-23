@@ -1,5 +1,5 @@
 <div align=center>
-	<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99CCFF,100:a82da&height=200&fontColor=FFFFFF&section=header&text=Welcome%20to%20JeJu-Do!&fontSize=60&animation=twinkling" />
+	<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99CCFF,100:a82da&height=200&fontColor=FFFFFF&textBg=true&section=header&text=Welcome%20to%20JeJu-Do!&fontSize=60&animation=twinkling" />
 </div>	
 <div align=center>
 	<a href="mailto:yunwltn98@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat&logo=Gmail&logoColor=white&link="mailto:yunwltn98@gmail.com" />
