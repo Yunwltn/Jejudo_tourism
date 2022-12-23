@@ -1,5 +1,5 @@
 <div align=center>
-	<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99CCFF,100:a82da&height=200&section=header&text=Welcome_to_JeJu-Do!&fontSize=60&animation=twinkling" />
+	<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99CCFF,100:a82da&height=200&section=header&text=Welcome%20to%20JeJu-Do!&fontSize=60&animation=twinkling" />
 </div>	
 <div align=center>
 	<a href="mailto:yunwltn98@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=flat&logo=Gmail&logoColor=white&link="mailto:yunwltn98@gmail.com" />
@@ -126,5 +126,5 @@
 ![6](https://user-images.githubusercontent.com/120348555/209072472-5b380e3f-7f0c-43c2-b5d8-8e8bf6144bb8.PNG)
 
 <div align=center>
-	<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99CCFF,100:a82da&height=100&section=footer&text=Thank%20you&fontSize=50&animation=twinkling" />
+	<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99CCFF,100:a82da&height=100&section=footer&text=Thank%20you&fontSize=50&fontColor=FFFFFF&animation=twinkling" />
 </div>	
