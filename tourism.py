@@ -66,8 +66,9 @@ def run_tourism_app() :
         st.info(my_choice + '의 조회수 1위는 ' + choice_df_max + ' 입니다')
         st.dataframe(choice_df[['분류','관광지명','주소','전체조회수','평균조회수']])
 
-        if st.checkbox('해당 분류 TOP10 조회수 차트로 보기') :
-            fig5 = px.bar(choice_df.head(10), x='관광지명', y='전체조회수', height=600, text='전체조회수')
+        if st.checkbox('해당 분류 조회수 차트로 보기') :
+            choice_df_rank = st.slider('차트로 확인할 갯수를 선택하세요', 2, 30, value=15)
+            fig5 = px.bar(choice_df.head(choice_df_rank), x='관광지명', y='전체조회수', height=600, text='전체조회수')
             fig5.update_traces(textfont_size=14,textposition='auto')
             st.plotly_chart(fig5)
 
