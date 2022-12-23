@@ -126,5 +126,5 @@
 ![6](https://user-images.githubusercontent.com/120348555/209072472-5b380e3f-7f0c-43c2-b5d8-8e8bf6144bb8.PNG)
 
 <div align=center>
-	<img src="https://capsule-render.vercel.app/api?type=cylinder&color=0:99CCFF,100:a82da&height=100&section=footer&text=Thank_you&fontSize=50&animation=twinkling" />
+	<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99CCFF,100:a82da&height=100&section=footer&text=Thank_you&fontSize=50&animation=twinkling" />
 </div>	
