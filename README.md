@@ -124,3 +124,7 @@
 ![4](https://user-images.githubusercontent.com/120348555/209072468-e3e24bc4-ab54-4818-83b4-02d65b6f264a.PNG)
 ![5](https://user-images.githubusercontent.com/120348555/209072469-3b0af687-2fb0-4502-bd6e-1d86db49b579.PNG)
 ![6](https://user-images.githubusercontent.com/120348555/209072472-5b380e3f-7f0c-43c2-b5d8-8e8bf6144bb8.PNG)
+
+<div align=center>
+	<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99CCFF,100:a82da&height=200&section=footer" />
+</div>	
