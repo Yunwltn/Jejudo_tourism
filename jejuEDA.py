@@ -44,3 +44,7 @@ def run_jejuEDA_app() :
     st.dataframe(tourism_df.corr())
     st.write('신한카드 제주도 내 음식점별 매출 변화량 데이터')
     st.dataframe(restaurant_df.corr())
+
+    st.write('')
+    st.write('사용한 데이터 주소 ')
+    st.info('https://www.bigdata-culture.kr/bigdata/user/data_market/agency/detail.do?id=ijto_org')
